@@ -1,5 +1,8 @@
 languag: python
 python:
 	- 3.8
+before install:
+	- "pip insall -U pip"
+	- "export PYTHONPATH=$PYTHONPATH:$(pwd)"
 script:
 	- pytest
